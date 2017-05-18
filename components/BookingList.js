@@ -35,7 +35,7 @@ class BookingList extends React.Component {
                             <span className="pet-name">{item.carName}</span>
                             <span className="apt-date pull-right">{item.bokDate}</span>
                         </div>
-                        <div className="owner-name"><span className="label-item">Owner:</span>
+                        <div className="owner-name"><span className="label-item">Name:</span>
                             {item.ownerName}
                         </div>
                         <div className="apt-notes">
