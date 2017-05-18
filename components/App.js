@@ -36,7 +36,14 @@ class App extends React.Component {
                             "ownerName": "Power Pandi",
                             "bokDate": "2016-06-21 9:15",
                             "bokNotes": "Wake up and drive"
-                        }
+                        },
+                        {
+                            "carName": "Volkswagan",
+                            "ownerName": "Ajay",
+                            "bokDate": "2016-06-21 9:15",
+                            "bokNotes": "Power Of Sport"
+                        },
+
                     ];
 
 

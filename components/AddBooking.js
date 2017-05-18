@@ -79,17 +79,23 @@ class AddBooking extends React.Component {
                 <div className="panel-body" style = { formControl }>
                     <form className="add-appointment form-horizontal" onSubmit={ this.handleAdd } ref="bookingForm">
                         <div className="form-group">
-                            <label className="col-sm-2 control-label" htmlFor="carName">Car Name</label>
+                            <label className="col-sm-2 control-label" htmlFor="carName">Select Car</label>
                             <div className="col-sm-10">
-                                <input type="text" className="form-control"
-                                id="carName" ref="inputCarName" placeholder="Car's Name" />
+                                <select className="form-control" id="carName" ref="inputCarName">
+                                <option value="">Select Car</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Duster">Duster</option>
+                                <option value="Swift">Swift</option>
+                                 <option value="Volkswagan">Volkswagan</option>
+                                </select>
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="col-sm-2 control-label" htmlFor="carOwner">Car Owner</label>
+                            <label className="col-sm-2 control-label" htmlFor="carOwner">Name</label>
                             <div className="col-sm-10">
                                 <input type="text" className="form-control"
-                                id="carOwner" ref="inputOwnerName" placeholder="Owner's Name" />
+                                id="carOwner" ref="inputOwnerName" placeholder="Name" />
                             </div>
                         </div>
                         <div className="form-group">
@@ -104,16 +110,16 @@ class AddBooking extends React.Component {
                                 id="aptTime" ref="inputAptTime" />
                             </div>
                         </div>
-                        <div className="form-group">
+                       <div className="form-group">
                             <label className="col-sm-2 control-label" htmlFor="aptNotes">Notes</label>
                             <div className="col-sm-10">
                                 <textarea className="form-control" rows="4" cols="50"
-                                id="aptNotes" ref="inputAptNotes" placeholder="Appointment Notes"></textarea>
+                                id="aptNotes" ref="inputAptNotes" placeholder="Booking Notes"></textarea>
                             </div>
                         </div>
                         <div className="form-group">
                             <div className="col-sm-offset-2 col-sm-10">
-                                <button type="submit" className="btn btn-primary pull-right">Add Appointment</button>
+                                <button type="submit" className="btn btn-primary pull-right">Add Booking</button>
                             </div>
                         </div>
                     </form>
